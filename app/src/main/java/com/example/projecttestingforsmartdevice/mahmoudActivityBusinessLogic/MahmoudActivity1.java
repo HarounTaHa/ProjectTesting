@@ -12,5 +12,6 @@ public class MahmoudActivity1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mahmoud_design_activity1);
+        //Test1
     }
 }

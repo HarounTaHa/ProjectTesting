@@ -4,6 +4,8 @@ import com.example.projecttestingforsmartdevice.models.Product;
 
 import junit.framework.TestCase;
 
+import static org.junit.Assert.*;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,6 +16,8 @@ import org.mockito.junit.MockitoJUnitRunner;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -32,11 +36,19 @@ public class FavoritesActivityPresenterTest  {
 
     @Test
     public void testUpdateCountOfListProduct() {
+        //zero item fail test
+        System.out.println(""+list.size());
         //given
-            list.add(new Product());
+        list.add(new Product());
         //when
         int countOfList = favoritesActivityPresenter.getCountListOfProducts(list);
+        System.out.println(countOfList);
+        // get count is 1 product
         //then
-        Mockito.verify(favoritesActivityViewInterface).updateCountListOfProducts(list);
+        //verify method getCountListOfProducts is call updateCountListOfProducts in class FavoritesActivityPresenter
+        // test pass
+        Mockito.verify(favoritesActivityViewInterface).updateCountListOfProducts(countOfList);
+
+
     }
 }

@@ -2,6 +2,7 @@ package com.example.projecttestingforsmartdevice.harounActivityBusinessLogic;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,7 +23,8 @@ public class HarounActivity1 extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(HarounActivity1.this, "Hello Welcome", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(),
+                        FavoritesActivity.class));
             }
         });
     }

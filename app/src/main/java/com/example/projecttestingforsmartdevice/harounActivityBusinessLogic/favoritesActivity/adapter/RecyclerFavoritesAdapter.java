@@ -1,5 +1,6 @@
 package com.example.projecttestingforsmartdevice.harounActivityBusinessLogic.favoritesActivity.adapter;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 
 import com.example.projecttestingforsmartdevice.R;
 import com.example.projecttestingforsmartdevice.models.Product;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -35,7 +37,10 @@ public class RecyclerFavoritesAdapter extends RecyclerView.Adapter<RecyclerFavor
         Product product= products.get(position);
         holder.textViewName.setText(product.getProductName());
         holder.textViewDescription.setText(product.getProductDescription());
-        holder.textViewName.setText(String.valueOf(product.getProductPrice()));
+        holder.textViewPrice.setText(String.valueOf(product.getProductPrice()));
+        String imageUrl=product.getProductImageUrl();
+        Log.e("uuuuuuuuuu",imageUrl);
+//        Picasso.get().load(imageUrl).into(holder.imageView);
     }
 
     @Override

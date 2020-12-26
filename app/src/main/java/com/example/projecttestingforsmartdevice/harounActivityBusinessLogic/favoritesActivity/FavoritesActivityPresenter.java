@@ -20,6 +20,9 @@ public class FavoritesActivityPresenter implements FavoritesActivityPresenterInt
 
     @Override
     public int getCountListOfProducts(List<Product> p) {
-        return 0;
+        if (p.size()>0) {
+          viewInterFace.updateCountListOfProducts(p.size());
+        }
+        return p.size();
     }
 }

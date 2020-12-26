@@ -5,5 +5,5 @@ import com.example.projecttestingforsmartdevice.models.Product;
 import java.util.List;
 
 public interface FavoritesActivityViewInterface {
-    List<Product> updateCountListOfProducts(List<Product> p );
+    void updateCountListOfProducts(int count );//  Refactor This
 }

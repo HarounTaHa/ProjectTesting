@@ -36,7 +36,7 @@ public class SignUpActivityPresenterTest {
         user.setPassword(inputPassword);
         user.setUserName(inputName);
      // when
-        signUpActivityPresenter.emailAndPasswordValidator(user.getUserEmail(),user.getPassword(),user.getUserName());
+        signUpActivityPresenter.emailAndPasswordValidator(user,user.getUserEmail(),user.getPassword(),user.getUserName());
 
      // then
         Mockito.verify(signUpActivityViewInterface).addUser(user);

@@ -1,6 +1,10 @@
 package com.example.projecttestingforsmartdevice.harounActivityBusinessLogic.signUpActivity;
 
 import com.example.projecttestingforsmartdevice.harounActivityBusinessLogic.favoritesActivity.FavoritesActivityViewInterface;
+import com.example.projecttestingforsmartdevice.models.User;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class SignUpActivityPresenter implements SignUpActivityPresenterInterface {
 
@@ -19,8 +23,19 @@ public class SignUpActivityPresenter implements SignUpActivityPresenterInterface
     }
 
     @Override
-    public boolean emailAndPasswordValidator(String email,String pass,String name) {
-        return false;
+    public boolean emailAndPasswordValidator(User user,String email,String pass,String name) {
+        // implementation
+        Pattern pattern=Pattern.compile(regex);
+           Matcher matcher = pattern.matcher(email);
+           if(matcher.matches()){
+               if(pass.length()>6)
+                   user.setUserName(name);
+                   user.setUserEmail(email);
+                   user.setPassword(pass);
+                   signUpActivityViewInterface.addUser(user);
+                   return true ;
+           }
+           return  false;
     }
 
 }

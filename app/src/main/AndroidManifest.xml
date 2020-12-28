@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.projecttestingforsmartdevice">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,10 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".harounActivityBusinessLogic.ProfileActivity"></activity>
+=======
+        <activity android:name=".mahmoudActivityBusinessLogic.search.SearchActivity"></activity>
+        <activity android:name=".mahmoudActivityBusinessLogic.addAddress.AddAddressActivity" />
+        <activity android:name=".mahmoudActivityBusinessLogic.details.DetailsActivity" />
+>>>>>>> 38063e8b2dc4512c51f244f113ccf9fcfa6ce938
         <activity android:name=".harounActivityBusinessLogic.SignUpActivity" />
         <activity android:name=".harounActivityBusinessLogic.FavoritesActivity" />
-        <activity android:name=".mahmoudActivityBusinessLogic.MahmoudActivity1" />
+        <activity android:name=".mahmoudActivityBusinessLogic.home.HomeActivity" />
         <activity android:name=".harounActivityBusinessLogic.HarounActivity1" />
         <activity android:name=".basilActivityBusinessLogic.BasilActivity2" />
         <activity android:name=".basilActivityBusinessLogic.BasilActivity1" />

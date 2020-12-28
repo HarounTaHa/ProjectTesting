@@ -14,7 +14,7 @@ import android.widget.Button;
 import com.example.projecttestingforsmartdevice.basilActivityBusinessLogic.BasilActivity1;
 import com.example.projecttestingforsmartdevice.hamzaActivityBusinessLogic.HamzaActivity1;
 import com.example.projecttestingforsmartdevice.harounActivityBusinessLogic.HarounActivity1;
-import com.example.projecttestingforsmartdevice.mahmoudActivityBusinessLogic.MahmoudActivity1;
+import com.example.projecttestingforsmartdevice.mahmoudActivityBusinessLogic.home.HomeActivity;
 
 import java.util.ArrayList;
 
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),
-                        MahmoudActivity1.class));
+                        HomeActivity.class));
             }
         });
 

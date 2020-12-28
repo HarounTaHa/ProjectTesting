@@ -1,4 +1,4 @@
-package com.example.projecttestingforsmartdevice.mahmoudActivityBusinessLogic;
+package com.example.projecttestingforsmartdevice.mahmoudActivityBusinessLogic.search;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,12 +6,11 @@ import android.os.Bundle;
 
 import com.example.projecttestingforsmartdevice.R;
 
-public class MahmoudActivity1 extends AppCompatActivity {
+public class SearchActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mahmoud_design_activity1);
-        //Test1
+        setContentView(R.layout.activity_search);
     }
 }

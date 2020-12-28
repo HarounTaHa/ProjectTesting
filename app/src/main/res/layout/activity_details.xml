@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mahmoudActivityBusinessLogic.details.DetailsActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:contentInsetStart="0dp"
+                app:contentInsetEnd="0dp"
+                android:background="#667EEA">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraint_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginEnd="10dp"
+                        >
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/cart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_baseline_add_shopping_cart_24"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="20dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/cartnoti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="#fff"
+                            android:textSize="12sp"
+                            android:layout_marginEnd="5dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/cart"
+                            app:layout_constraintEnd_toStartOf="@+id/cart"
+                            app:layout_constraintTop_toTopOf="@+id/cart" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="10dp"
+                        app:srcCompat="@drawable/ic_baseline_add_24"
+                        app:layout_constraintTop_toTopOf="@+id/constraint_cart"
+                        app:layout_constraintEnd_toStartOf="@+id/constraint_cart"
+                        app:layout_constraintBottom_toBottomOf="@+id/constraint_cart"
+                        android:paddingHorizontal="10dp"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/details_img"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginHorizontal="20dp"
+                app:srcCompat="@drawable/children"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/details_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black turtleneck top"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp"
+                app:layout_constraintTop_toBottomOf="@+id/details_img"
+                app:layout_constraintStart_toStartOf="@+id/details_img"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/details_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$42"
+                android:layout_marginTop="8dp"
+                android:textSize="24sp"
+                app:layout_constraintTop_toBottomOf="@+id/details_name"
+                app:layout_constraintStart_toStartOf="@+id/details_img"
+                />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/parent_details_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_price">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#505050" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/details_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Man"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="24sp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#505050" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/parent_details_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/parent_details_category"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/details_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Description"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/details_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:textSize="24sp"
+                    android:layout_marginBottom="15dp"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/details_buy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#667EEA"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:text="BUY NOW"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/nestedscrollview"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        />
+</RelativeLayout>

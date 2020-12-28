@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mahmoudActivityBusinessLogic.addAddress.AddAddressActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:contentInsetStart="0dp"
+                app:contentInsetEnd="0dp"
+                android:background="#667EEA">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraint_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginEnd="10dp"
+                        >
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/cart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_baseline_add_shopping_cart_24"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="20dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/cartnoti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="#fff"
+                            android:textSize="12sp"
+                            android:layout_marginEnd="5dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/cart"
+                            app:layout_constraintEnd_toStartOf="@+id/cart"
+                            app:layout_constraintTop_toTopOf="@+id/cart" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:id="@+id/title_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Address"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="22sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="45dp"
+                app:layout_constraintTop_toBottomOf="@+id/title_main"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/title_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_name"
+                />
+
+            <TextView
+                android:id="@+id/title_addresslane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address lane"
+                android:textSize="22sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/edit_name"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <EditText
+                android:id="@+id/edit_addresslane"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/title_addresslane"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_addresslane"
+                />
+
+            <TextView
+                android:id="@+id/title_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textSize="22sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/edit_addresslane"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <EditText
+                android:id="@+id/edit_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/title_city"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_city"
+                />
+
+            <TextView
+                android:id="@+id/title_postalcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Postal Code"
+                android:textSize="22sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/edit_city"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <EditText
+                android:id="@+id/edit_postalcode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/title_postalcode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_postalcode"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#667EEA"
+        android:text="Add Address"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/nestedscrollview"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,6 +1,8 @@
 package com.example.projecttestingforsmartdevice.models;
 
-public class Product {
+import java.io.Serializable;
+
+public class Product implements Serializable {
     String productName;
     String productCategory;
     String productImageUrl;

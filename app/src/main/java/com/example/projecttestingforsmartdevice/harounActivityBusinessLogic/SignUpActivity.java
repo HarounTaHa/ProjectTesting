@@ -4,18 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.projecttestingforsmartdevice.MainActivity;
 import com.example.projecttestingforsmartdevice.R;
 import com.example.projecttestingforsmartdevice.basilActivityBusinessLogic.BasilActivity1;
 import com.example.projecttestingforsmartdevice.harounActivityBusinessLogic.signUpActivity.SignUpActivityPresenter;
 import com.example.projecttestingforsmartdevice.harounActivityBusinessLogic.signUpActivity.SignUpActivityViewInterface;
-import com.example.projecttestingforsmartdevice.mahmoudActivityBusinessLogic.MahmoudActivity1;
+import com.example.projecttestingforsmartdevice.mahmoudActivityBusinessLogic.home.HomeActivity;
 import com.example.projecttestingforsmartdevice.models.User;
 
 import java.util.ArrayList;
@@ -58,7 +56,7 @@ public class SignUpActivity extends AppCompatActivity implements SignUpActivityV
             }
             if (isSuccessAddUser){
                 startActivity(new Intent(getApplicationContext(),
-                        MahmoudActivity1.class));
+                        HomeActivity.class));
             }
 
              }

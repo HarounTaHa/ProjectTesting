@@ -27,11 +27,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ViewPager viewPager = findViewById(R.id.viewPager);
-
-        AuthenticationPagerAdapter pagerAdapter = new AuthenticationPagerAdapter(getSupportFragmentManager());
-        pagerAdapter.addFragmet(new Login());
-        viewPager.setAdapter(pagerAdapter);
         buttonToActivityHaroun =findViewById(R.id.buttonToActivityHaroun);
         buttonToActivityHamza =findViewById(R.id.buttonToActivityHamza);
         buttonToActivityBasil =findViewById(R.id.buttonToActivityBasil);

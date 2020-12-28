@@ -5,15 +5,30 @@ public class User {
         String userName;
         String userAddress;
         String password;
+        String gender;
         public User() {
         }
 
-    public User(String userEmail, String userName,String password, String userAddress) {
+    public User(String userEmail, String userName,String password) {
                 this.userEmail = userEmail;
                 this.userName = userName;
                 this.password=password;
-                this.userAddress = userAddress;
         }
+
+    public User(String userEmail, String userName, String userAddress,String gender) {
+        this.userEmail = userEmail;
+        this.userName = userName;
+        this.userAddress = userAddress;
+        this.gender=gender;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
     public String getPassword() {
         return password;

@@ -21,7 +21,7 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<com.example.pr
     private List<Product> mData;
     private LayoutInflater mInflater;
 
-    HomeRecyclerViewAdapter(Context context, List<Product> data) {
+    public HomeRecyclerViewAdapter(Context context, List<Product> data) {
         this.mInflater = LayoutInflater.from(context);
         this.mData = data;
     }

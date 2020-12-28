@@ -21,7 +21,7 @@ public class SearchRecyclerViewAdapter extends RecyclerView.Adapter<com.example.
     private List<Product> mData;
     private LayoutInflater mInflater;
 
-    SearchRecyclerViewAdapter(Context context, List<Product> data) {
+    public SearchRecyclerViewAdapter(Context context, List<Product> data) {
         this.mInflater = LayoutInflater.from(context);
         this.mData = data;
     }

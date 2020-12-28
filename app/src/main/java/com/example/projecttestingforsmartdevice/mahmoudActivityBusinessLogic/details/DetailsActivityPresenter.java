@@ -12,16 +12,24 @@ public class DetailsActivityPresenter implements DetailsActivityPresenterInterfa
 
     @Override
     public void setFavorite(Product product) {
-
+        if (product != null){
+            viewInterface.updateFavorite(product);
+        }
     }
 
     @Override
     public void setCart(Product product) {
-
+        if (product != null){
+            viewInterface.updateCart(product);
+        }
     }
 
     @Override
-    public void setText(String count, int maxlength, String result) {
-
+    public void setText(String count, int max,String result) {
+        if (!count.equals(result)){
+            if (Integer.valueOf(count) >= max){
+                viewInterface.updateText(result);
+            }
+        }
     }
 }

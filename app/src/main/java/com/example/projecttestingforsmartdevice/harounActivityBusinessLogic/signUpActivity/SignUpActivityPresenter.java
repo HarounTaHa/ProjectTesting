@@ -28,13 +28,14 @@ public class SignUpActivityPresenter implements SignUpActivityPresenterInterface
         Pattern pattern=Pattern.compile(regex);
            Matcher matcher = pattern.matcher(email);
            if(matcher.matches()){
-               if(pass.length()>6)
+               if(pass.length()>6) {
                    user.setUserName(name);
                    user.setUserEmail(email);
                    user.setPassword(pass);
                    signUpActivityViewInterface.addUser(user);
-                   return true ;
-           }
+                   return true;
+               }
+               }
            return  false;
     }
 

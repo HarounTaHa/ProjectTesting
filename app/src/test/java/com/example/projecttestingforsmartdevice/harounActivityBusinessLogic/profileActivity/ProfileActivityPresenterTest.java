@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 
 
 @RunWith(MockitoJUnitRunner.class)
-public class ProfileActivityPresenterTest extends TestCase {
+public class ProfileActivityPresenterTest {
 
     ProfileActivityPresenter profileActivityPresenter;
     User user;

@@ -9,16 +9,16 @@
     <TextView
         android:id="@+id/textView_haroun"
         android:layout_width="164dp"
-        android:layout_height="77dp"
+        android:layout_height="0dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginBottom="71dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginBottom="207dp"
         android:text="Haroun Welcome"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button_toast"
+        app:layout_constraintBottom_toTopOf="@+id/btnProfile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.229"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,13 +26,23 @@
         app:layout_constraintVertical_bias="0.307" />
 
     <Button
-        android:id="@+id/button_toast"
+        android:id="@+id/btn_signUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="420dp"
-        android:text="Toast"
+        android:layout_marginBottom="400dp"
+        android:text="SignUp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintHorizontal_bias="0.417"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="275dp"
+        android:text="Profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

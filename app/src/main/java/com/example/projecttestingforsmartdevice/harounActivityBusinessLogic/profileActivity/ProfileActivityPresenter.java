@@ -12,7 +12,9 @@ public class ProfileActivityPresenter implements ProfileActivityPresenterInterfa
 
     @Override
     public void getUser(User user) {
-
+        if(user!=null){
+            profileActivityViewInterface.displayDetailsUser(user);
+        }
 
     }
 }

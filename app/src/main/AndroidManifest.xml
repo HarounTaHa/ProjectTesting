@@ -11,13 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".harounActivityBusinessLogic.ProfileActivity"></activity>
-<!--=======-->
-        <activity android:name=".mahmoudActivityBusinessLogic.search.SearchActivity"></activity>
+        <activity android:name=".harounActivityBusinessLogic.AddressActivity"></activity>
+        <activity android:name=".harounActivityBusinessLogic.ProfileActivity" /> <!-- ======= -->
+        <activity android:name=".mahmoudActivityBusinessLogic.search.SearchActivity" />
         <activity android:name=".mahmoudActivityBusinessLogic.addAddress.AddAddressActivity" />
-        <activity android:name=".mahmoudActivityBusinessLogic.details.DetailsActivity" />
-<!--&gt;>>>>>> 38063e8b2dc4512c51f244f113ccf9fcfa6ce938-->
+        <activity android:name=".mahmoudActivityBusinessLogic.details.DetailsActivity" /> <!-- &gt;>>>>>> 38063e8b2dc4512c51f244f113ccf9fcfa6ce938 -->
         <activity android:name=".harounActivityBusinessLogic.SignUpActivity" />
         <activity android:name=".harounActivityBusinessLogic.FavoritesActivity" />
         <activity android:name=".mahmoudActivityBusinessLogic.home.HomeActivity" />

@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".harounActivityBusinessLogic.AddressActivity"></activity>
+        <activity android:name=".hamzaActivityBusinessLogic.HamzaActivity1"></activity>
+        <activity android:name=".harounActivityBusinessLogic.AddressActivity" />
         <activity android:name=".harounActivityBusinessLogic.ProfileActivity" /> <!-- ======= -->
         <activity android:name=".mahmoudActivityBusinessLogic.search.SearchActivity" />
         <activity android:name=".mahmoudActivityBusinessLogic.addAddress.AddAddressActivity" />
@@ -23,7 +24,6 @@
         <activity android:name=".basilActivityBusinessLogic.BasilActivity2" />
         <activity android:name=".basilActivityBusinessLogic.BasilActivity1" />
         <activity android:name=".hamzaActivityBusinessLogic.HamzaActivity2" />
-        <activity android:name=".hamzaActivityBusinessLogic.HamzaActivity1" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

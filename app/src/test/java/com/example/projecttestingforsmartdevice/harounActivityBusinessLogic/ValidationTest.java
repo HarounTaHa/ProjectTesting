@@ -2,15 +2,14 @@ package com.example.projecttestingforsmartdevice.harounActivityBusinessLogic;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.Date;
 
 import static org.junit.Assert.*;
 
-public class ValidatorTest {
-    Validator validator;
+public class ValidationTest {
+    Validation validator;
     String inputEmail="harountaha@outlook.sa";
     String inputPassword = "1sss456";
     Date date;
@@ -19,7 +18,7 @@ public class ValidatorTest {
 
     @Before
     public void setUp() throws Exception {
-        validator  =new Validator();
+        validator  =new Validation();
         milliSecond = System.currentTimeMillis();
     }
 
@@ -45,4 +44,5 @@ public class ValidatorTest {
     public void tearDown() throws Exception {
         validator=null;
     }
+
 }

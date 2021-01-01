@@ -12,6 +12,7 @@ import com.example.projecttestingforsmartdevice.R;
 import com.example.projecttestingforsmartdevice.models.Address;
 
 public class HarounActivity1 extends AppCompatActivity {
+
     TextView textView;
     Button button;
     Button buttonFavorites;
